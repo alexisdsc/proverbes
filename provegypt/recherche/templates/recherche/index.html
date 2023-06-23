@@ -1,0 +1,37 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'recherche/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Recherche</title>
+</head>
+<body>
+    <div class="second-page-contenu" >
+        <div class="navMenu">
+            <a href="{% url 'main:index' %}">Accueil <br>صفحة رئيسية</a>
+            <a href="{% url 'proverbe:index' %}">Proverbe <br> أمتال</a>
+            <a href="{% url 'expressions:index' %}">Expressions <br>أقوال </a>
+            <a href="mailto:alexisdsc@hotmail.com?subject=Contact%20depuis%20baume%20d'Egypte">
+                <!--<img id="contact" src="{% static 'proverbe/images/contact.png' %}" border="white">-->
+                Contact<br>اتصال </a>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="search_box">
+            <!--<form name="search" action="¬/cgi-bin/query.py" method="get"> methode = "get" par défaut-->
+            <form name="search" method="get">
+                <input type="search" id="searching" name="q" placeholder="Rechercher..." aria-label="Search">
+                <!--<input type="button" value="OK">-->
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

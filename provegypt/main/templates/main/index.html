@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+    <title>Baumes d'Egypte</title>
+</head>
+
+<body>
+    <div class="contenu">
+
+        <div class="normal">
+            <div class="text">Baumes d'Egypte </div>
+        </div>
+        <div class="hover">
+            <div class="text">عبق مصر</div>
+        </div>
+
+        <nav class="navMenu">
+            <a href="{% url 'proverbe:index' %}">Proverbes <br>أمثال</a>
+            <a href="{% url 'expressions:index' %}">Expressions <br> أقوال</a>
+            <a href="{% url 'recherche:index' %}">Recherche <br>بحث </a>
+            <a href="mailto:alexisdsc@hotmail.com?subject=Contact%20depuis%20baume%20d'Egypte">Contact <br>اتصال </a>
+            <div class="dot"></div>
+        </nav>
+
+    </div>
+
+</body>
+
+</html>
